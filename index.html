@@ -2,30 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MultiChat example</title>
-    <script src="//cdn.tmijs.org/js/latest/1.x/tmi.min.js"></script>
+    <title>Multichat | Angular</title>
+    <script src="https://goodgame.ru/js/minified/global.js"></script>
 </head>
 <body>
-    Hi every one, on my personal github page!
-    <script>
-        (function () {
-            'use strict';
-
-            var options = {
-                connection: {
-                    secure: true,
-                    reconnect: true
-                },
-                channels: ['#dota2ruhub']
-            };
-
-            var client = new tmi.client(options);
-            client.on('chat', function (channel, state, message, self) {
-                console.log(message);
-            });
-
-            client.connect();
-        })();
-    </script>
-</body>
+    <ui-view></ui-view>
+<script type="text/javascript" src="vendor.js"></script><script type="text/javascript" src="app.js"></script></body>
 </html>

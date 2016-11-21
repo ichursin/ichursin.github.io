@@ -1,0 +1,5 @@
+<div id="chat-container">
+    <div class="message" ng-repeat="message in vm.messages track by $index">
+        <div class="text" ng-bind-html="message"></div>
+    </div>
+</div>
